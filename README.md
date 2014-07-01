@@ -2,6 +2,9 @@ yt-captions
 ===========
 Read Youtube transcript (captions) from any public Youtube video
 
+####Requirements
+[http://phantomjs.org/download.html]PhantomJS
+
 ####Usage
 ```bash
 ruby yt_captions.rb http://www.youtube.com/watch?v=[video-id]
