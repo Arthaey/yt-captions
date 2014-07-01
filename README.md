@@ -6,6 +6,11 @@ Read Youtube transcript (captions) from any public Youtube video
 PhantomJS http://phantomjs.org/download.html
 
 ####Usage
+Start PhantomJS
+```bash
+bin/phantomjs --webdriver=9999
+```
+Run script
 ```bash
 ruby yt_captions.rb http://www.youtube.com/watch?v=[video-id]
 ```
