@@ -3,7 +3,7 @@ yt-captions
 Read Youtube transcript (captions) from any public Youtube video
 
 ####Requirements
-[http://phantomjs.org/download.html]PhantomJS
+PhantomJS http://phantomjs.org/download.html
 
 ####Usage
 ```bash
