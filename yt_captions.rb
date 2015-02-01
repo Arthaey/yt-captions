@@ -10,9 +10,10 @@ wait = Selenium::WebDriver::Wait.new(:timeout => 10) # seconds
 
 driver.navigate.to link
 
-wait.until { driver.find_element(:class => 'yt-uix-button-icon-action-panel-transcript') }
+overflow_button = driver.find_element(:id, 'action-panel-overflow-button')
+overflow_button.click
 
-transcript_button = driver.find_element(:class, 'yt-uix-button-icon-action-panel-transcript')
+transcript_button = driver.find_element(:class, 'action-panel-trigger-transcript')
 transcript_button.click
 
 # wait for at least one transcript line
