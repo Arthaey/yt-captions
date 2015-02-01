@@ -1,8 +1,14 @@
 require 'selenium-webdriver'
 require 'nokogiri'
+require 'uri'
 
-# supply full YouTube URL from command line
-link = ARGV[0]
+# supply video ID or full YouTube URL from command line
+arg = ARGV[0]
+if arg =~ /^#{URI::regexp}$/
+  link = arg
+else
+  link = "http://www.youtube.com/watch?v=#{arg}"
+end
 
 # PhantomJS server
 driver = Selenium::WebDriver.for(:remote, :url => "http://localhost:9999")
