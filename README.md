@@ -18,6 +18,7 @@ bin/phantomjs --webdriver=9999
 Run script
 ```bash
 ruby yt_captions.rb http://www.youtube.com/watch?v=[video-id]
+ruby yt_captions.rb [video-id]
 ```
 Where `[video-id]` is the Youtube video ID.
 
