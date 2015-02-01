@@ -5,6 +5,8 @@ Read Youtube transcript (captions) from any public Youtube video
 ####Requirements
 PhantomJS http://phantomjs.org/download.html
 
+Gems selenium-webdriver & nokogiril
+
 ####Usage
 Start PhantomJS
 ```bash
